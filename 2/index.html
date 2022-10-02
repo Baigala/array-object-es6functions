@@ -1,0 +1,98 @@
+<!DOCTYPE f html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      if statement, ternary operator, switch case, string toroltoi ajillah
+    </title>
+  </head>
+  <body>
+    <script>
+      // {} - (block)
+      // <, >, =, !-not, &&, ||
+      // Өнөөдрийн хичээлээр программ дотор хэрхэн шийдвэр гаргадаг талаар сурах болно. Ямар ч програмчлалын хэлэнд if else гэсэн statement-үүд байдаг. Энэ нь хувьсагчид болон statement-үүдэд ямар утга орж ирэхээс шалтгаалан иим бол ингэнэ тийм бол тэгнэ гэж програмчлаж өгдөг байгаа.
+
+      // if statement ===>
+      // var nas = +prompt("Насаа оруул");
+      // if(nas >= 18) {
+      //   // true
+      //   alert("Adult");
+      // } else {
+      //   // false
+      //   alert("Child");
+      // }
+
+      // if (nas >= 0 && nas <= 12) {
+      //   console.log("baga nas");
+      // } else if (nas >= 13 && nas < 18) {
+      //   console.log("osvor nas");
+      // } else {
+      //   console.log("adult");
+      // }
+
+      // ternary operator ===>
+      // var num = 5;
+      // num < 0
+      //   ? console.log("sorog")
+      //   : num % 1 == 0
+      //   ? console.log("buhel")
+      //   : console.log("butarhai");
+
+      // nas >= 0 && nas <= 12
+      //   ? console.log("baga nas")
+      //   : nas >= 13 && nas <= 17
+      //   ? console.log("osvor nas")
+      //   : console.log("adult");
+
+      // switch case ===>
+      // switch(true){
+      //     case nas >= 0 && nas < 13:
+      //         console.log('child');
+      //         break;
+      //     case nas >= 12 && nas < 18:
+      //         console.log('osvor nas');
+      //         break;
+      //     default:   console.log('adult');
+      // }
+
+      // var arr = ['a','b','c','d','f'];
+      // for(var i = 0; i < arr.length; i++){
+      //   console.log(arr[i])
+      // }
+
+      // var str = "this is dummy text";
+      // console.log(str.slice(8, 13));  ===> [startIndex, endIndex[
+      // str.toUpperCase();
+      // trim() - ehend bolon suuld bga heregceegui hooson zainuudiig ustgaj ogno. trimStart() zuun taliin, trimEnd() baruun
+      // concat(anotherString) || str + str1 || concat("eddffadf") - 2 string torliin ogogdliig negtgene.
+      // replace(solih gej bga heseg, shineer orluulah heseg) str.replace(" ", "-"); => hamgiin ehend taarsan temdegtiin solino, replaceAll ni buh temdegtiig solij ogno.
+
+      // Bodlogo 1: Гараас нэр оруулаад, бүх эгшиг үсгүүдийг concat хийгээд консолд хэвлэ.
+      // var ner = prompt("neree oruulna uu"); // bataa
+      // var egshig = "";
+      // if (ner !== null) {
+      //   for (var i = 0; i < ner.length; i++) {
+      //     if (
+      //       ner[i].toLowerCase() === "a" ||
+      //       ner[i].toLowerCase() === "e" ||
+      //       ner[i].toLowerCase() === "i" ||
+      //       ner[i].toLowerCase() === "o" ||
+      //       ner[i].toLowerCase() === "u"
+      //     ) {
+      //       egshig = egshig.concat(ner[i]);
+      //     }
+      //   }
+      //   console.log(ner, egshig);
+      // } else {
+      //   console.log("neree oruulaagui bn");
+      // }
+      // for dawtalt
+      // var name = "abigail";
+      // for (var i = 0; i < name.length; i++) {
+      //   console.log(name[i]); // name[0] == a
+      // }
+    </script>
+  </body>
+</html>

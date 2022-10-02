@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taniltsuulga</title>
+  </head>
+  <body>
+    <script>
+      // % - Remainder Operator
+      // DataType - Primitive , Non-Primitive
+      // "" - Double quotation mark
+      // '' - Single
+      // `` - back qoute , backtic
+      // ${}
+
+      //   script tag нь html хуудсанд js file-г холбож өгөх үүрэгтэй tag, src - source нь эх үүсвэр гэсэн утгатай англи үг.
+      // - single line comment
+      /* multi line 
+      aaa
+      aaa
+      aaaa
+      comment */
+
+      /****************************** Өгөгдлийн төрөл, хувьсагч, консолтой танилцах *****/
+      // №1 Variable буюу хувьсагч бол ямар нэгэн өгөгдөл хадгалдаг сав гэж ойлгож болно.
+      // Хувьсагчийн нэрийг $, болон цагаан толгойн үсгээр эхэлж бичихийг зөвшөөрнө.
+      // Js ийн түлхүүр үгээр(reserved word) хувьсагчийг нэрлэж болохгүй.
+      // Олон үгээс тогтох нэрийг CamelCase ашиглан бичнэ.
+      // №2 өгөгдлийн төрөл 5 primitive datatypes
+      // 1. Number - 1234567890
+      // 2. String - Текст төвтэй өгөгдөл - "gkdlfsjg;ldf", "56"
+      // 3. Boolean - True(1) , False(0)
+      // 4. undefined - тодорхойгүй
+      // 5. null - Хоосон
+
+      // NaN - тоон өгөгдөлтэй холбоотой алдаа гарах үед гарч ирнэ
+      // reserved word - Программчлалд ашиглагддаг тусгай түлхүүр үгс
+      // Math operators + - * /
+
+      // var x = 5;
+      // var y = 6;
+
+      // x = x + y; // += 11
+      // x += y; // 17
+      // x -= y; // 11
+
+      // x++; // x = x + 1;
+      // x--; // x = x - 1;
+      // console.log(x);
+
+      // var ner = "Baigal";
+      // var mergejil = "programmer";
+      // console.log("Hi! My name is " + ner + ". I am a " + mergejil);
+      // console.log(`Hi! my name is  ${ner}`);
+
+      // Integer - buhel toog ilerhiilne
+      // Float - Butarhai toog ilerhiilne
+      // Math.PI
+      // parseInt(45) - стринг төрлийн өгөгдлийг тоо болгоно аль эсвэл тухайн хувиргах string-н өмнө + тэмдэг авна.
+      // var z = "32.5"
+      // var sum = x + +z
+      // toString() - toog string bolgoh
+      // var x = 15;
+      // var xStr = x.toString();
+      // var x = parseInt(prompt("too oruul"))
+      // console.log(x)
+      // + && parseInt()
+      // \ - escape operator
+      // console.log('Hi. I\'m James');
+      // console.log("gfdjk\"gdkl;");
+      // console.log(`gfjdk\`l''''"""`);
+
+      /****************************** Үндсэн операторуудын жишээ *****/
+      // var year, ageBaigal, ageZoloo, yearBaigal, yearZoloo;
+      // year = 2023;
+      // ageBaigal = 21;
+      // ageZoloo = 24;
+      // console.log("Энэ жил бол " + year);
+      // yearBaigal = year - ageBaigal;
+      // yearZoloo = year - ageZoloo;
+      // console.log("Байгалын төрсөн он бол " + yearBaigal);
+      // console.log("Золоогийн төрсөн он бол " + yearZoloo);
+      // // 15 жилийн дараа хэдэн он болох вэ?
+      // var futureYear = year + 15;
+      // console.log(
+      //   year + " оноос хойш 15 жилийн дараа " + futureYear + " он байх болно."
+      // );
+      // // 18 жилийн дараа Золоо хэдэн настай байх вэ?
+      // var ageZolooAfter18Years = ageZoloo + 18;
+      // console.log("18 жилийн дараа Золоогийн нас: " + ageZolooAfter18Years);
+
+      // console.log(year * 2);
+      // console.log(12 % 3);
+      // var zolooOlder = ageZoloo > ageBaigal;
+      // console.log(zolooOlder);
+      // console.log(typeof zolooOlder);
+      // console.log(typeof ageZoloo);
+      // console.log(typeof "aaa");
+      // console.log(typeof null);
+      // console.log(3 / 2);
+      // console.log(3 / "2");
+
+      /****************************** Coercion буюу автомат төрөл хувиргалт, операторуудын ажиллах дараалал *****/
+      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+      // coersion
+      // 1.
+      // var a = 16 + true + 0 + true + "2";
+      // console.log(a);
+      //2.
+      // var a = 12;
+      // var b = true;
+      // var c = "gizmo";
+      // // c = 3;
+      // console.log(a + b + c);
+      // 3.
+      // var result = 4 > 2 > 1;
+      // console.log("Үр дүн: " + result);
+
+      /****************************** alert, prompt ашиглах *****/
+      // age = 25;
+      // age += 2;
+      // var age = +prompt("Та насаа оруулна уу");
+      // alert("Hello!\nYour age: " + age);
+      //
+      // Гараас радиус авж тухайн радиустай тойргийн урт, талбайг тус тусад нь ол..
+      //// urt = PI * 2 * r;
+      //// talbai = PI * r * r;
+      // var r = +prompt("Радиусын уртыг оруул");
+      // var talbai = Math.PI * Math.pow(r, 2);
+      // var urt = Math.PI * (r * 2);
+    </script>
+  </body>
+</html>
