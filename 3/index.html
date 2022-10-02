@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non-Primitive Data types in JS, Function</title>
+  </head>
+  <body>
+    <script>
+      // []
+      //   var massiv1 = [323, "adfdsdfa", true];
+      // var nestedMassiv = [
+      //   [234, 3, 1],
+      //   ["da", "daf", "ada"],
+      // ];
+      // console.log(nestedMassiv[0][0]);
+      // push() - hamgin suuld element nemj ogno
+      // pop() - hamgiin suuliin elementiig ustgah.
+      // shift() - hamgiin ehnii elementiig ustgah.
+      // unshift() - hamgiin ehend element nemeh
+      // slice() - todorhoi hesgiig tasdaj awna.
+      // splice() - todorhoi hesgiin ustgah.
+      // reverse() - ogogdluudiin bairlaliig urwuu bolgono.
+      // split("haaguur salgah");
+      // join("yu zalgaj niiluuleh");
+      // arr.concat(zalgah massiv);
+      // ... - spread operator massive, object, fucntion deer ashiglagddag
+      var mass = [123, 34, 56];
+      var arr2 = [];
+      //   arr1.concat(mass); => concat hover hgd uzeh uyed ...items concat caanaa spread operatoriig ashigladag. === [...mass];
+
+      // OBJECT
+      // var shiree = {
+      //   ongo: "tsagaan",
+      //   material: "Mod",
+
+      //   ondor: "1 meter",
+      //   hayag: {
+      //     city: "UB",
+      //     duureg: "SBD"
+      //   },
+      // };
+      // shiree["ongo"] === shiree.ongo
+      // shiree.une = [10, 20];
+      // shiree.hayag.city ==> "UB"
+      // [{...} , {...} , {...}]
+      // var sandal = {...shiree,
+      // ongo: "black"
+      // }
+
+      // for in ni massive object 2 uulan deer ni ajillana.
+      // var masss = [12, 13, 14];
+      // for (var el in masss) {
+      //   console.log(masss[el]);
+      // } //===> 0 1 2
+      // for (var el of masss) {
+      //   console.log(el);
+      // } // ===> 12 13 14
+
+      // function myFunction() {
+      //   var y = 5;
+      //   return function () {
+      //     console.log(y);
+      //   };
+      // }
+      // var y = myFunction;
+      // console.log(y);
+
+      // Дасгал
+      // var student1 = {
+      //   ner: "a",
+      //   number: "99221111",
+      //   email: "a@gmail.com",
+      // };
+      // var student2 = {
+      //   ner: "b",
+      //   number: "90444444",
+      //   email: "b@gmail.com",
+      // };
+      // var student3 = {
+      //   ner: "c",
+      //   number: "95555555",
+      //   email: "c@gmail.com",
+      // };
+      // var student4 = {
+      //   ner: "d",
+      //   number: "96666666",
+      //   email: "d@gmail.com",
+      // };
+      // var student5 = {
+      //   ner: "e",
+      //   number: "99999999",
+      //   email: "e@gmail.com",
+      // };
+
+      // var students = [student1, student2, student3, student4, student5];
+      // var email = prompt("haih emailee oruulna u");
+      // var mobiUsers = [];
+      // var oldson = false;
+      // for (var i = 0; i < students.length; i++) {
+      //   if (email == students[i].email) {
+      //     console.log(students[i]);
+      //     oldson = true;
+      //   }
+
+      //   if (
+      //     students[i].number.toString().split("").slice(0, 2).join("") ==
+      //       "99" ||
+      //     students[i].number.toString().split("").slice(0, 2).join("") === "95"
+      //   ) {
+      //     mobiUsers.push(students[i]);
+      //   }
+      // }
+      // if (!oldson) {
+      //   alert("oldsongui.");
+      // }
+      // console.log(mobiUsers);
+    </script>
+  </body>
+</html>
